@@ -1,7 +1,7 @@
 package problems;
 
 import problems.auxiliar.ListUtils;
-import problems.auxiliar.Node;
+import problems.auxiliar.LinkedListNode;
 
 import java.util.Stack;
 
@@ -11,7 +11,7 @@ import java.util.Stack;
 public class Prob15 {
 
     private static class ResultLinkedList {
-        private Node<Integer> head;
+        private LinkedListNode<Integer> head;
 
         public ResultLinkedList() {
             head = null;
@@ -19,9 +19,9 @@ public class Prob15 {
 
         public void append(Integer x) {
             if (head == null) {
-                head = new Node<>(x);
+                head = new LinkedListNode<>(x);
             } else {
-                Node<Integer> tmp = new Node<>(x);
+                LinkedListNode<Integer> tmp = new LinkedListNode<>(x);
                 tmp.next = head;
                 head = tmp;
             }
@@ -29,7 +29,7 @@ public class Prob15 {
 
     }
 
-    public static Node<Integer> sumLinkedList(Node<Integer> l1, Node<Integer> l2) {
+    public static LinkedListNode<Integer> sumLinkedList(LinkedListNode<Integer> l1, LinkedListNode<Integer> l2) {
         Stack<Integer> stackL1 = loadIntoStack(l1);
         Stack<Integer> stackL2 = loadIntoStack(l2);
 
@@ -70,9 +70,9 @@ public class Prob15 {
         }
     }
 
-    private static Stack<Integer> loadIntoStack(Node<Integer> list) {
+    private static Stack<Integer> loadIntoStack(LinkedListNode<Integer> list) {
         Stack<Integer> stack = new Stack<>();
-        Node<Integer> current = list;
+        LinkedListNode<Integer> current = list;
         while (current != null) {
             stack.add(current.value);
             current = current.next;
@@ -81,15 +81,15 @@ public class Prob15 {
     }
 
     public static void main(String[] args) {
-        Node<Integer> a = new Node<>(6);
-        a.next = new Node<>(1);
-        a.next.next = new Node<>(7);
+        LinkedListNode<Integer> a = new LinkedListNode<>(6);
+        a.next = new LinkedListNode<>(1);
+        a.next.next = new LinkedListNode<>(7);
 
-        Node<Integer> b = new Node<>(2);
-        b.next = new Node<>(9);
-        b.next.next = new Node<>(5);
+        LinkedListNode<Integer> b = new LinkedListNode<>(2);
+        b.next = new LinkedListNode<>(9);
+        b.next.next = new LinkedListNode<>(5);
 
-        Node<Integer> sum = sumLinkedList(a, b);
+        LinkedListNode<Integer> sum = sumLinkedList(a, b);
         ListUtils.printList(sum);
     }
 }

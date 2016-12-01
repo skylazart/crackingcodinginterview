@@ -1,16 +1,16 @@
 package problems;
 
-import problems.auxiliar.Node;
+import problems.auxiliar.LinkedListNode;
 
 /**
  * Created by fsantos on 11/29/16.
  */
 public class Prob18 {
-    public static <T extends Comparable<T>> Node<T> findLoop(Node<T> head) {
+    public static <T extends Comparable<T>> LinkedListNode<T> findLoop(LinkedListNode<T> head) {
         if (head == null) return null;
 
-        Node<T> fast = head.next;
-        Node<T> slow = head;
+        LinkedListNode<T> fast = head.next;
+        LinkedListNode<T> slow = head;
 
         while (fast.next != null) {
             if (fast == slow) {
@@ -27,14 +27,14 @@ public class Prob18 {
     }
 
     public static void main(String[] args) {
-        Node<Integer> head = new Node<>(1);
-        head.next = new Node<>(2);
-        head.next.next = new Node<>(3);
-        head.next.next.next = new Node<>(4);
-        head.next.next.next.next = new Node<>(5);
+        LinkedListNode<Integer> head = new LinkedListNode<>(1);
+        head.next = new LinkedListNode<>(2);
+        head.next.next = new LinkedListNode<>(3);
+        head.next.next.next = new LinkedListNode<>(4);
+        head.next.next.next.next = new LinkedListNode<>(5);
         head.next.next.next.next.next = head.next;
 
-        Node<Integer> loop = findLoop(head);
+        LinkedListNode<Integer> loop = findLoop(head);
         if (loop != null)
             System.out.println(loop.value);
     }

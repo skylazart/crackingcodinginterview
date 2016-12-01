@@ -1,6 +1,6 @@
 package problems;
 
-import problems.auxiliar.Node;
+import problems.auxiliar.LinkedListNode;
 
 /**
  * Created by fsantos on 12/1/16.
@@ -14,14 +14,14 @@ public class Prob21 {
     }
 
     public class MyStack<T extends Comparable<T>> implements MyStackI<T> {
-        private Node<T> head = null;
+        private LinkedListNode<T> head = null;
 
         @Override
         public void push(T v) {
             if (head == null) {
-                head = new Node<T>(v);
+                head = new LinkedListNode<T>(v);
             } else {
-                Node<T> t = new Node<T>(v);
+                LinkedListNode<T> t = new LinkedListNode<T>(v);
                 t.next = head;
                 head = t;
             }
@@ -50,7 +50,7 @@ public class Prob21 {
         public String toString() {
             StringBuilder sb = new StringBuilder();
 
-            Node<T> current = head;
+            LinkedListNode<T> current = head;
             while (current != null) {
                 if (current != head) sb.append(" -> ");
                 sb.append(current.value);

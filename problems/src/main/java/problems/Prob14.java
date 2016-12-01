@@ -1,31 +1,31 @@
 package problems;
 
 import problems.auxiliar.ListUtils;
-import problems.auxiliar.Node;
+import problems.auxiliar.LinkedListNode;
 
 /**
  * Created by fsantos on 11/25/16.
  */
 public class Prob14 {
     private static class CustomList {
-        private Node<Integer> head = null;
-        private Node<Integer> tail = null;
+        private LinkedListNode<Integer> head = null;
+        private LinkedListNode<Integer> tail = null;
 
         void append(Integer x) {
             if (head == null) {
-                head = new Node<>(x);
+                head = new LinkedListNode<>(x);
                 tail = head;
             } else {
-                tail.next = new Node<>(x);
+                tail.next = new LinkedListNode<>(x);
                 tail = tail.next;
             }
         }
     }
 
-    public static Node<Integer> sumLinkedListValues(Node<Integer> l1, Node<Integer> l2) {
+    public static LinkedListNode<Integer> sumLinkedListValues(LinkedListNode<Integer> l1, LinkedListNode<Integer> l2) {
         CustomList result = new CustomList();
-        Node<Integer> curL1 = l1;
-        Node<Integer> curL2 = l2;
+        LinkedListNode<Integer> curL1 = l1;
+        LinkedListNode<Integer> curL2 = l2;
 
         int carry = 0;
 
@@ -80,15 +80,15 @@ public class Prob14 {
     }
 
     public static void main(String[] args) {
-        Node<Integer> a = new Node<>(7);
-        a.next = new Node<>(1);
-        a.next.next = new Node<>(6);
+        LinkedListNode<Integer> a = new LinkedListNode<>(7);
+        a.next = new LinkedListNode<>(1);
+        a.next.next = new LinkedListNode<>(6);
 
-        Node<Integer> b = new Node<>(5);
-        b.next = new Node<>(9);
-        b.next.next = new Node<>(2);
+        LinkedListNode<Integer> b = new LinkedListNode<>(5);
+        b.next = new LinkedListNode<>(9);
+        b.next.next = new LinkedListNode<>(2);
 
-        Node<Integer> sum = sumLinkedListValues(a, b);
+        LinkedListNode<Integer> sum = sumLinkedListValues(a, b);
         ListUtils.printList(sum);
     }
 }

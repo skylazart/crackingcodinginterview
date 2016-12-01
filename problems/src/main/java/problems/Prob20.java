@@ -1,6 +1,6 @@
 package problems;
 
-import problems.auxiliar.Node;
+import problems.auxiliar.LinkedListNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ import static java.util.Arrays.copyOf;
  */
 public class Prob20 {
     public class MyStack<T extends Comparable<T>> {
-        private Node<T> head;
+        private LinkedListNode<T> head;
         private int N;
 
         public MyStack() {
@@ -24,9 +24,9 @@ public class Prob20 {
             N++;
 
             if (head == null) {
-                head = new Node<T>(v);
+                head = new LinkedListNode<T>(v);
             } else {
-                Node<T> t = new Node<>(v);
+                LinkedListNode<T> t = new LinkedListNode<>(v);
                 t.next = head;
                 head = t;
             }
