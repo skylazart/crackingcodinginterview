@@ -123,3 +123,8 @@ Prob22:
 Transform a Binary Search Tree in a Doubly linked list. In order.
 
 Prob23:
+Route Between Nodes: Given a directed graph, design an algorithm to  nd out whether there is a route between two nodes.
+
+Prob24:
+Minimal Tree: Given a sorted (increasing order) array with unique integer elements, write an algorithm to create a
+binary search tree with minimal height.

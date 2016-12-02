@@ -21,16 +21,16 @@ public class Prob22 {
             if (first == null) {
                 first = new DoublyLinkedListNode<T>(value);
                 last = first;
-                last.setNext(first);
-                last.setPrev((first));
-                first.setNext(last);
+                last.next = first;
+                last.prev = first;
+                first.next = last;
             } else {
                 DoublyLinkedListNode<T> t = new DoublyLinkedListNode<T>(value);
-                t.setNext(first);
-                t.setPrev(last);
-                last.setNext(t);
+                t.next = first;
+                t.prev = last;
+                last.next = t;
                 last = t;
-                first.setPrev(last);
+                first.prev = last;
             }
         }
 
@@ -47,15 +47,15 @@ public class Prob22 {
 
     private <T extends Comparable<T>> void makeDLL(BinaryTreeNode<T> node, DLL<T> dll) {
         if (node == null) return;
-        makeDLL(node.getLeft(), dll);
-        dll.add(node.getValue());
-        makeDLL(node.getRight(), dll);
+        makeDLL(node.left, dll);
+        dll.add(node.value);
+        makeDLL(node.right, dll);
     }
 
     private void run() {
         BinaryTreeNode<Integer> root = new BinaryTreeNode<>(5);
-        root.setRight(new BinaryTreeNode<>(10));
-        root.setLeft(new BinaryTreeNode<>(4));
+        root.right = new BinaryTreeNode<>(10);
+        root.left = new BinaryTreeNode<>(4);
 
         DoublyLinkedListNode<Integer> first = makeDLL(root);
     }
