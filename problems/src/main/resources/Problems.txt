@@ -118,3 +118,8 @@ Implement a function popAt(int index) which performs a pop operation on a specif
 Sort Stack: Write a program to sort a stack such that the smallest items are on the top. You can use an additional
 temporary stack, but you may not copy the elements into any other data structure (such as an array).
 The stack supports the following operations: push, pop, peek, and isEmpty.
+
+Prob22:
+Transform a Binary Search Tree in a Doubly linked list. In order.
+
+Prob23:
