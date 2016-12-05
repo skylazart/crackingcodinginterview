@@ -139,16 +139,25 @@ Check if a BST is balanced
 Prob27:
 Check if a tree is a BST
 
-TODO:
 Prob28:
-Check a subtree
+Check Subtree: Tl and T2 are two very large binary trees, with Tl much bigger than T2. Create an
+algorithm to determine if T2 is a subtree of Tl.
+A tree T2 is a subtree of Tl if there exists a node n in Tl such that the subtree of n is identical to T2.
+That is, if you cut off the tree at node n, the two trees would be identical.
 
 Prob29:
-Merge two linked lists
+Merge two sorted linked lists
 
 Prob30:
-Merge two arrays
+Merge two sorted arrays
 
 Prob31:
 Binary search in a shifted array
+
+Prob9:
+Not completed
+
+Prob32:
+Print each node within a binary tree only when the sum of right nodes are greater then the sum of left nodes
+
 
