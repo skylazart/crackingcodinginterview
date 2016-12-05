@@ -154,9 +154,6 @@ Merge two sorted arrays
 Prob31:
 Binary search in a shifted array
 
-Prob9:
-Not completed
-
 Prob32:
 Print each node within a binary tree only when the sum of right nodes are greater then the sum of left nodes
 
