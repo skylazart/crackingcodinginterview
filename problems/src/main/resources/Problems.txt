@@ -157,4 +157,132 @@ Binary search in a shifted array
 Prob32:
 Print each node within a binary tree only when the sum of right nodes are greater then the sum of left nodes
 
+Prob33:
+Paths with Sum: You are given a binary tree in which each node contains an integer value
+(which might be positive or negative). Design an algorithm to count the number of paths that sum to a given value.
+The path does not need to start or end at the root or a leaf, but it must go downwards
+(traveling only from parent nodes to child nodes).
+
+Prob34:
+Given an array, how would you find all contiguous subsequences with a particular sum?
+Again, think about the duplicated work in the brute-force algorithm.
+
+Prob35:
+Find the left and right most in a BST
+
+Prob36:
+Find sum of n elements after kth smallest element in BST. Tree is very large, you are not allowed to traverse the tree.
+
+Prob37:
+Given an array of numbers. Print all the pairs (2) of numbers in the array if the sum of those numbers is also present
+in the array.
+
+Prob38:
+Build Order: You are given a list of projects and a list of dependencies (which is a list of pairs of projects,
+where the second project is dependent on the  rst project). All of a project's dependencies must be built before the
+project is. Find a build order that will allow the projects to be built.
+If there is no valid build order, return an error.
+EXAMPLE
+Input:
+projects: a, b, c, d, e, f
+dependencies: (a, d), (f, b), (b, d), (f, a), (d, c) Output: f, e, a, b, d, c
+
+Prob39:
+Given an array of integers and the integer n, return the indices of the first two integers in the array that sum to n.
+
+Prob40:
+Given a singly linked list: 1->2->3->4->5
+Change it to 1->5->2->4->3 using O(1) space
+
+Prob41:
+Keep max top numbers from a stream
+
+Prob42:
+With the best time complexity, please come up with a code to find the minimum delta of two elements from two different
+arrays of integers of different sizes - a[-3, 1, 999], b[-1, 2, 3]
+
+Prob44:
+Insert into a sorted Linked list
+
+Prob45:
+Delete a given node from a list using the following method:
+void delete(head, toBeDeleted);
+
+Prob46:
+Compare two string represented by a linked list
+Example:
+Input: list1 = g->e->e->k->s->a
+       list2 = g->e->e->k->s->b
+Output: -1
+
+Input: list1 = g->e->e->k->s->a
+       list2 = g->e->e->k->s
+Output: 1
+
+Input: list1 = g->e->e->k->s
+       list2 = g->e->e->k->s
+Output: 0
+
+Prob48:
+Bubble sort
+
+Prob49:
+Insertion sort
+
+Prob50:
+Merge a linked list into another linked list at alternate positions
+
+Prob51:
+Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from
+root node down to the nearest leaf node.
+
+Prob52:
+Maximum Path Sum in a Binary Tree
+
+Prob53:
+Check if a given array can represent Preorder Traversal of Binary Search Tree
+
+Prob54:
+Check whether a binary tree is a full binary tree or not
+
+Prob55:
+Lowest Common Ancestor in a Binary Search Tree.
+
+Prob56:
+Check if a binary tree is subtree of another binary tree | Set 2
+
+Prob57:
+Remove nodes on root to leaf paths of length < K
+
+Prob58:
+Select a Random Node from a Singly Linked List
+
+Prob59:
+K’th Smallest/Largest Element in Unsorted Array | Set 1
+
+Prob61:
+Given a sum K and a data set of integers, find me 2 numbers which add up to the the sum
+
+Prob62:
+Given a sorted array and a number x, find the pair in array whose sum is closest to x
+
+TODO:
+Prob60:
+K’th Smallest/Largest Element in Unsorted Array | Set 2 (Expected Linear Time)
+
+Prob43:
+We have a bag containing numbers 1, 2, 3, …, 100. Each number appears exactly once, so there are 100 numbers.
+Now one number is randomly picked out of the bag. Find the missing number.
+Now how would you do this if TWO numbers are missing?
+
+Prob47:
+Reverse a Linked List in groups of given size
+Example:
+Inputs:  1->2->3->4->5->6->7->8->NULL and k = 3
+Output:  3->2->1->6->5->4->8->7->NULL.
+
+Inputs:   1->2->3->4->5->6->7->8->NULL and k = 5
+Output:  5->4->3->2->1->8->7->6->NULL.
+
+
 
