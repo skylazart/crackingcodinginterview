@@ -16,4 +16,28 @@ public final class ListUtils {
 
         System.out.println();
     }
+
+    public static LinkedListNode<Character> strToLinkedList(String s) {
+        LinkedListNode<Character> head = new LinkedListNode<>(s.charAt(0));
+        LinkedListNode<Character> current = head;
+
+        for (int i = 1; i < s.length(); i++) {
+            current.next = new LinkedListNode<>(s.charAt(i));
+            current = current.next;
+        }
+
+        return head;
+    }
+
+    public static LinkedListNode<Integer> arrToLinkedList(Integer[] arr) {
+        LinkedListNode<Integer> head = new LinkedListNode<>(arr[0]);
+        LinkedListNode<Integer> current = head;
+
+        for (int i = 1; i < arr.length; i++) {
+            current.next = new LinkedListNode<>(arr[i]);
+            current = current.next;
+        }
+
+        return head;
+    }
 }

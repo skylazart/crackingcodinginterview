@@ -13,4 +13,9 @@ public class BinaryTreeNode<T extends Comparable<T>> {
         left = null;
         right = null;
     }
+
+    @Override
+    public String toString() {
+        return "[" + value + "]";
+    }
 }

@@ -11,4 +11,9 @@ public class LinkedListNode<T extends Comparable<T>> {
         value = v;
         next = null;
     }
+
+    @Override
+    public String toString() {
+        return "[value: " + value + "]";
+    }
 }

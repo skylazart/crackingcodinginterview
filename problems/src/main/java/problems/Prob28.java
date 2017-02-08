@@ -27,14 +27,14 @@ subtree:
 2   1   9   10
 
 
-dfs(10) | dfs(30)
+dfsInteractive(10) | dfsInteractive(30)
 
-dfs(10, 30)
+dfsInteractive(10, 30)
 
-dfs(20, 30)
+dfsInteractive(20, 30)
     false
 
-dfs(30, 30)
+dfsInteractive(30, 30)
     true
 
  */

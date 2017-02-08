@@ -23,12 +23,9 @@ node = 10, sum = 0
 
 public class Prob32 {
     public static int printOnly(BinaryTreeNode<Integer> node) {
+        if (node == null) return 0;
         if (node.right == null && node.left == null) {
             return node.value;
-        } else if (node.right == null) {
-            return node.left.value;
-        } else if (node.left == null) {
-            return node.right.value;
         }
 
         int sumLeft = printOnly(node.left);

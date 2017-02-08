@@ -266,16 +266,116 @@ Given a sum K and a data set of integers, find me 2 numbers which add up to the 
 Prob62:
 Given a sorted array and a number x, find the pair in array whose sum is closest to x
 
-TODO:
-Prob60:
+Prob63:
+Reverse an array without affecting special characters
+
+Prob64:
+Count triplets with sum smaller than a given value
+
+Prob65:
+Given a sorted array and a number x, find the pair in array whose sum is closest to x
+Prob64 solved here too!
+
+Prob66:
+Convert array into Zig-Zag fashion
+
+Prob67:
+Combine all characters from a given string
+
+Prob68:
+Length of the largest subarray with contiguous elements | Set 1
+
+Prob69:
+Prob70:
+Subtree with given sum in a Binary Tree
+
+Prob71:
+Smallest subarray with sum greater than a given value
+
+Prob73:
+Stock Buy Sell to Maximize Profit (single buy/sell)
+
+Prob74:
+Print the longest path from root to leaf in a Binary tree (Basically the nodes that lie on the height path).
+
+Prob75:
+Interactive DFS
+
+Prob76:
+You are given an array of integers(with all valid input) You have to write a function which will produce another array,
+where the value in each index of the array will be the product of all values in the given array accept that index.
+
+Example
+Array 1: 1 2 3 4 5
+Array 2: 120 60 40 30 24.
+
+Come up with a solution of O(n^2) can you improve it?
+
+Prob77:
+Write a code for reversing letters of string in java.
+
+Prob78:
+Write code for implementing Binary Search algorithm
+
+Prob79:
+With the best time complexity, please come up with a code to find the minimum delta of two elements from two different
+arrays of integers of different sizes:
+a[-3, 1, 999], b[-1, 2, 3]
+
+Prob80:
+Given a singly linked list of integers, write a function in java that returns true if the given list is palindrome,
+else returns false
+
+Prob81:
+Sort a stack using only one other stack and no recursion.
+
+Prob82:
+Given a singly linked list: 1->2->3->4->5
+Change it to 1->5->2->4->3 using O(1) space
+
+Prob83:
+Given a list L of numbers from 0 to n, and another number k = [0-9], find how many times k appears in L.
+If the target number in L is more than one digit, treat each digit separately. For example,
+k=0 appears twice in L = [0,10].
+
+Prob85:
+Q. Given an array of numbers. Print all the pairs (2) of numbers in the array if the sum of those numbers is also
+present in the array. Write in C
+
+Prob86:
+There 'N' different types of routers and 'J' different types of jobs to be performed on all these routers.
+Design a system wherein user could easily perform these jobs on these routers.
+Ex: Say two types of routers are - DLink , Netgear. If user wants to change the IP address (a job), DLink exposes a
+public API to do it. NetGear needs the data in form of xml.
+
+Was asked to design Entities involved and their communications, basic algorithm, data-storage logic if any.
+
+Prob87:
+Given the root of a Binary Tree along with two integer values. Assume that both integers are present in the tree.
+Find the LCA (Least Common Ancestor) of the two nodes with values of the given integers.
+2 pass solution is easy. You must solve this in a single pass.
+
+Prob88:
+Find sum of n elements after kth smallest element in BST. Tree is very large, you are not allowed to traverse the tree.
+
+Prob89:TODO
+Design a noSQL database for a chat service
+
+Prob90:
+Find a number in a BST and return its parent
+
+Prob60:TODO
 K’th Smallest/Largest Element in Unsorted Array | Set 2 (Expected Linear Time)
 
-Prob43:
+Prob84:TODO
+Shortest path with Dijkstra
+
+Prob43:TODO
 We have a bag containing numbers 1, 2, 3, …, 100. Each number appears exactly once, so there are 100 numbers.
 Now one number is randomly picked out of the bag. Find the missing number.
 Now how would you do this if TWO numbers are missing?
 
-Prob47:
+Prob47:TODO
 Reverse a Linked List in groups of given size
 Example:
 Inputs:  1->2->3->4->5->6->7->8->NULL and k = 3
@@ -284,5 +384,403 @@ Output:  3->2->1->6->5->4->8->7->NULL.
 Inputs:   1->2->3->4->5->6->7->8->NULL and k = 5
 Output:  5->4->3->2->1->8->7->6->NULL.
 
+Prob72:TODO
+Stock Buy Sell to Maximize Profit
 
+Prob91:
+You are given an array of integers. Find the minimum difference between two prime numbers(Positive or negative) in
+the array when present with minimum time complexity and provide the test data to test the this code.
+
+Prob92:
+Given an array of integers, design an algorithm that moves all non-zero integers to the end of the array.
+Minimize the number of writes or swaps.
+
+Prob93:
+Check if an integer array is arithmetic sequence.
+Example: 1, 2, 3, 4, 5, 6, 7, 8 => true
+1, 3, 5, 7, 9 => true
+Array may not be sorted.
+
+Prob94:
+Implement quicksort
+
+Prob95:TODO
+Implement mergesort
+
+Prob96:
+Given a list of integers of size n, write a method to write all permutations the list; do this in O(1) space
+Hint: No recursion.
+
+Prob98:
+Given a number (200), compare it to four variables (E.G A,B,C,D) and return true if they are all equal to the given number.
+Do this in the most efficient way, and if possible without if statements.
+
+Prob99:
+Find the missing element from the given 2 array, second array is duplicate.
+array1: [1,2,3,4,5,6,7]
+array2: [1,3,4,5,6,7]
+
+Prob100:
+You are given a graph and a node in the graph.
+Group the nodes connected to this node if they are also connected to each other.
+For example, the graph has nodes 1, 2, 3, 4, 5 where 1 is connected to 2, 3, 4;
+2 and 3 are also connected to each other, 4 is just connected to 1 and 5 is a separate node.
+You are given node 1 as input. Output should be:
+2 3
+4
+
+Prob101:
+Given an array , find the element (say X) that has all the elements less that it to its left side and all the elements
+greater to it on its right side.
+The left and right elements of X need not be in sorted form.
+
+Prob102:
+Reverse linked list form n occurence
+http://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/ 1->2->3->4->5->6->7->8
+if k=3;
+3->2->1->6->5->4
+
+Prob103:
+LCA BST
+
+Prob104:
+LCA BT
+
+Prob105:
+Convert a Binary Tree to a Circular Doubly Link List
+
+Prob106:
+Rearrange a given list such that it consists of alternating minimum maximum elements
+
+Prob107:
+Check if a linked list is Circular Linked List
+
+Prob108:
+Rearrange a Linked List in Zig-Zag fashion
+
+Prob109:
+Merge two sorted linked lists such that merged list is in reverse order
+
+Prob110:
+Delete N nodes after M nodes of a linked list
+
+Prob111:
+Find an element in a sorted matrix
+
+Prob112:
+Q: If you were given a series of equations e.g. [1 = 2, 2 = 4, 3 = 4, 6 = 7, 5 = 8, 8 = 3]
+and then another series [1 != 3, 4 != 8, ..., 6 != 1 ]
+
+Check whether the equations combined is valid.
+For the example given, your program should return 'invalid', because the first series implies that 1 = 3,
+which contradicts the statement 1 != 3 in the second series.
+
+Prob113:
+In a binary tree, find and print the path with smallest weight.
+Criteria: the tree contains integer values in the nodes. It may not be balanced tree. Weight is calculated by sum of
+values in the nodes in that path. Write code that returns the path as well as the minweight.
+
+Prob114:
+Find the first non-repeated element in an unsorted array.
+
+Prob115:
+Face to Face
+Q4) two arrays given to you. First array contains number s. Second array contains key values.
+
+We need to find smallest window in first array which covers all second array elements.
+e.g:
+
+Input= {6,7,1,3,2,4,5,2,3,1,2,5}
+Keys = {2,5,1}
+
+answer: from 9th index to 11th index is the smallest window.
+
+Prob116:
+Find the maximum consecutive 1's in an array of 0's and 1's.
+Example:
+a) 00110001001110 - Output :3 [Max num of consecutive 1's is 3]
+b) 1000010001 - Output :1 [Max num of consecutive 1's is 1]
+
+Prob117:
+Given an array , find the element (say X) that has all the elements less that it to its left side and all the elements
+greater to it on its right side.
+The left and right elements of X need not be in sorted form.
+arr[] = 5,4,3,7,4,1,2,8,10
+ans: 8
+
+Prob118:
+Given a Binary tree and a sum S, print all the paths, starting from root, that sums upto the given sum.
+Note that this problem is different from root to leaf paths. Here path doesn’t need to end on a leaf node.
+
+Input :
+Input : sum = 8,
+        Root of tree
+         1
+       /   \
+     20      3
+           /    \
+         4       15
+        /  \     /  \
+       6    7   8    9
+Output :
+Path: 1 3 4
+
+Input : sum = 38,
+        Root of tree
+          10
+       /     \
+     28       13
+           /     \
+         14       15
+        /   \     /  \
+       21   22   23   24
+Output : Path found: 10 28
+        Path found: 10 13 15
+
+
+Prob119:
+Calculate depth of a full Binary tree from Preorder
+Input  : nlnll
+Output : 2
+
+Input  : nlnnlll
+Output : 3
+
+Prob120:
+Print all nodes in a binary tree having K leaves
+
+Prob121:
+Find maximum level sum in Binary Tree
+Input :               4
+                    /   \
+                   2    -5
+                  / \    /\
+                -1   3 -2  6
+Output: 6
+
+Prob122:
+Root to leaf paths having equal lengths in a Binary Tree
+Input : Root of below tree
+                   10
+                  /   \
+                8      2
+              /  \    /  \
+            3     5  2    4
+Output : 4 paths are of length 3.
+
+Prob123:
+Find if there is a pair in root to a leaf path with sum equals to root’s data
+
+Prob124:
+Longest consecutive sequence in Binary tree
+
+
+Prob125: TODO //NOT SOLVED
+Convert a Binary Tree to a Circular Doubly Link List in place
+
+
+Prob126:
+Print cousins of a given node in Binary Tree
+
+Prob127:
+Sum of k smallest elements in BST
+
+Prob128:
+Find the closest element in Binary Search Tree
+
+Prob129:
+People are sitting in a theater row and you're an usher.
+Given a row of seats that either occupied (1) or unoccupied (0) and the condition
+that new people being seated do not like to sit next to anyone else, implement the
+function that determines whether you can or cannot seat a number of people in the row.
+
+Input: [1,0,0,0,0,0,1,0,0]
+3 => true
+4 => false
+Input: [1,0,0,1,0,0,1,0,0]
+1 => true
+2 => false
+Input: [0]
+1 => true
+2 => false
+
+Prob130:
+Write a iterator wrapper to remove duplicates from collections without using temporary storage.
+
+For Example:
+ArrayList A = {RAT,CAT,BAT}
+ArrayList B = {RAT,CAT,MAT}
+
+ResultIterator itr = new ResultIterator();
+itr.next() should display {RAT,CAT,BAT,MAT}
+
+
+Program skeleton:
+
+class ResultIterator {
+
+ResultIterator(iterator itr1, iterator itr2) {
+
+}
+
+bool hasnext {
+// implement this method
+}
+
+E next() {
+// implement this method
+}
+}
+
+Prob131:
+Find if an array of strings can be chained to form a circle
+Given an array of strings, find if the given strings can be chained to form a circle. A string X can be put before
+another string Y in circle if the last character of X is same as first character of Y.
+
+Input: arr[] = {"geek", "king"}
+Output: Yes, the given strings can be chained.
+Note that the last character of first string is same
+as first character of second string and vice versa is
+also true.
+
+Input: arr[] = {"for", "geek", "rig", "kaf"}
+Output: Yes, the given strings can be chained.
+The strings can be chained as "for", "rig", "geek"
+and "kaf"
+
+Input: arr[] = {"aab", "bac", "aaa", "cda"}
+Output: Yes, the given strings can be chained.
+The strings can be chained as "aaa", "aab", "bac"
+and "cda"
+
+Input: arr[] = {"aaa", "bbb", "baa", "aab"};
+Output: Yes, the given strings can be chained.
+The strings can be chained as "aaa", "aab", "bbb"
+and "baa"
+
+Input: arr[] = {"aaa"};
+Output: Yes
+
+Input: arr[] = {"aaa", "bbb"};
+Output: No
+
+Input  : arr[] = ["abc", "efg", "cde", "ghi", "ija"]
+Output : Yes
+These strings can be reordered as, “abc”, “cde”, “efg”,
+“ghi”, “ija”
+
+Input : arr[] = [“ijk”, “kji”, “abc”, “cba”]
+Output : No
+
+Prob132:
+Array consist of -1 and 1, Find count of all sub-arrays where sum = 0.
+Ex. [-1,1,-1,1]
+Ans : 4
+[-1,1] [1,-1],[-1,1],[-1,1,-1,1]
+
+Ex. [-1,-1,1,1]
+Ans : 2 [-1,1][-1,-1,1,1]
+
+Prob133:
+Find three element from different three arrays such that that a + b + c = sum
+
+Input : a1[] = { 1 , 2 , 3 , 4 , 5 };
+	a2[] = { 2 , 3 , 6 , 1 , 2 };
+	a3[] = { 3 , 2 , 4 , 5 , 6 };
+        sum = 9
+Output : Yes
+1  + 2  + 6 = 9  here 1 from a1[] and 2 from
+a2[] and 6 from a3[]
+
+Input : a1[] = { 1 , 2 , 3 , 4 , 5 };
+	a2[] = { 2 , 3 , 6 , 1 , 2 };
+	a3[] = { 3 , 2 , 4 , 5 , 6 };
+         sum = 20
+Output : No
+
+Prob134:
+Design a restaurant reservation system
+
+Prob135:
+Sum of minimum and maximum elements of all subarrays of size k.
+
+Input : arr[] = {2, 5, -1, 7, -3, -1, -2}
+        K = 4
+Output : 18
+Explanation : Subarrays of size 4 are :
+     {2, 5, -1, 7},   min + max = -1 + 7 = 6
+     {5, -1, 7, -3},  min + max = -3 + 7 = 4
+     {-1, 7, -3, -1}, min + max = -3 + 7 = 4
+     {7, -3, -1, -2}, min + max = -3 + 7 = 4
+     Sum of all min & max = 6 + 4 + 4 + 4
+                          = 18
+
+Prob136:
+Find the median of an unsorted array.
+Have to do better than O(nlogn) time.
+e.g.
+Given [2, 6, 1] return 2
+Given [2, 6, 1, 4] return 3 which is sum of the two elements in middle over 2
+
+Prob137:
+Check loop in array according to given constraints
+
+Given an array arr[0..n-1] of positive and negative numbers we need to find if there is a cycle in array with given
+rules of movements. If a number at an i index is positive, then move arr[i]%n forward steps, i.e., next index to visit
+is (i + arr[i])%n. Conversely, if it’s negative, move backward arr[i]%n steps i.e.,
+next index to visit is (i – arr[i])%n. Here n is size of array. If value of arr[i]%n is zero,
+then it means no move from index i.
+
+Input: arr[] = {2, -1, 1, 2, 2}
+Output: Yes
+Explanation: There is a loop in this array
+because 0 moves to 2, 2 moves to 3, and 3
+moves to 0.
+
+Input  : arr[] = {1, 1, 1, 1, 1, 1}
+Output : Yes
+Whole array forms a loop.
+
+Input  : arr[] = {1, 2}
+Output : No
+We move from 0 to index 1. From index
+1, there is no move as 2%n is 0. Note that
+n is 2.
+
+
+Prob138:
+Minimum steps to reach end of array under constraints
+Given an array containing one digit numbers only, assuming we are standing at first index, we need to reach to end
+of array using minimum number of steps where in one step, we can jump to neighbor indices or can jump to a position
+with same value.
+
+In other words, if we are at index i, then in one step you can reach to, arr[i-1] or arr[i+1] or arr[K] such that
+arr[K] = arr[i] (value of arr[K] is same as arr[i])
+
+Input : arr[] = {5, 4, 2, 5, 0}
+Output : 2
+Explanation : Total 2 step required.
+We start from 5(0), in first step jump to next 5
+and in second step we move to value 0 (End of arr[]).
+
+Input  : arr[] = [0, 1, 2, 3, 4, 5, 6, 7, 5, 4,
+                 3, 6, 0, 1, 2, 3, 4, 5, 7]
+Output : 5
+Explanation : Total 5 step required.
+0(0) -> 0(12) -> 6(11) -> 6(6) -> 7(7) ->
+(18)
+(inside parenthesis indices are shown)
+
+Prob139:
+A binary tree and a number, say k are given. Print every path in the tree with sum of the nodes in the path as k.(
+A path can start from any node and end at any node, i.e. they need not be root node and leaf node;
+and negative numbers can also be there in the tree)
+
+Prob140:
+Write a program to reveres string from intervals
+felipe, k=2
+efilep
+
+felipe, k=3
+lefepi
 
