@@ -784,3 +784,189 @@ efilep
 felipe, k=3
 lefepi
 
+Prob141:
+# There's a room with a TV and people are coming in and out to watch it. The TV is on only when there's at least a person in the room.
+# For each person that comes in, we record the start and end time. We want to know for how long the TV has been on. In other words:
+# Given a list of arrays of time intervals, write a function that calculates the total amount of time covered by the intervals.
+# For example:
+
+# input = [(1,4), (2,3)]
+# > 3
+# input = [(4,6), (1,2)]
+# > 3
+# input = {{1,4}, {6,8}, {2,4}, {7,9}, {10, 15}}
+# > 11
+
+Prob142:
+Delete files of size more than 100mb in a folder which are older than 90 days.
+
+Prob143:
+Call Center: Imagine you have a call center with three levels of employees: respondent, manager,
+and director. An incoming telephone call must be first allocated to a respondent who is free. If the
+respondent can't handle the call, he or she must escalate the call to a manager. If the manager is not
+free or not able to handle it, then the call should be escalated to a director. Design the classes and
+data structures for this problem. Implement a method dispatchCall() which assigns a call to
+the first available employee.
+
+Prob144:
+Maximum element between two nodes of BST
+Input : arr[] = { 18, 36, 9, 6, 12, 10, 1, 8 },
+        a = 1,
+        b = 10.
+Output : 12
+
+
+Prob145:
+Print Common Nodes in Two Binary Search Trees
+
+Prob146: TODO
+Check for Identical BSTs without building the trees
+2, 4, 1, 3
+2, 4, 3, 1
+
+a[] = {8, 3, 6, 1, 4, 7, 10, 14, 13}
+b[] = {8, 10, 14, 3, 6, 4, 1, 7, 13}
+
+8: 10 14 13
+   3 6 1 4 7
+
+8: 10 14 13
+   3 6 4 1 7
+
+3: 6 4 7
+
+
+Prob147:
+Floor and Ceil from a BST
+
+Prob148:
+Print the number of cells in the largest region in the given matrix.
+1 1 0 0
+0 1 1 0
+0 0 1 0
+1 0 0 0
+
+O/P: 5
+
+Prob149:
+list1 -->aaa,bbb,ddd,xyxz,...
+list2-->bbb,ccc,ccc,hkp,..
+list3> ddd,eee,,ffff,lmn,..
+
+Inside a list the words are sorted
+I want to remove words which are repeated across the list and print in sorted order
+If the words are repeated in same list its valid.
+In the above case
+it should print aaa-->ccc-->ccc-->eee--->fff-->glk-->hkp-->lmn-->xyxz
+
+
+Prob150:
+Sublist Search (Search a linked list in another list)
+Input  : list1 =  10->20
+         list2  = 5->10->20
+Output : LIST FOUND
+
+Input  : list1 =  1->2->3->4
+         list2  = 1->2->1->2->3->4
+Output : LIST FOUND
+
+Input  : list1 =  1->2->3->4
+         list2  = 1->2->2->1->2->3
+Output : LIST NOT FOUND
+
+Prob151:
+Partitioning a linked list around a given value and keeping the original order
+Input : 1->4->3->2->5->2->3,
+        x = 3
+Output: 1->2->2->3->3->4->5
+
+Input : 1->4->2->10
+        x = 3
+Output: 1->2->4->10
+
+Input : 10->4->20->10->3
+        x = 3
+Output: 3->10->4->20->10
+
+Prob152:
+Find pair for given sum in a sorted singly linked without extra space
+Input : head = 3-->6-->7-->8-->9-->10-->11 , x=17
+Output: (6, 11), (7, 10), (8, 9)
+
+Prob153:
+Find the first unrepeated character in a given string. Solve this in a single pass.
+
+Prob154:
+You are given an array of size n. Now print the number of distinct elements in the array for every frame of size k.
+
+Prob155: TODO
+Swap the elements in Kth position from the start and end of a link list.
+
+ex:
+input: list: 1,2,4,5,7,8 & K=2
+output: 1,7,4,5,2,8
+
+Prob156: TODO
+Given some resources in the form of linked list you have to canceled out all the resources whose sum up to 0(Zero) and return the remaining list.
+
+E.g-->> 6 -6 8 4 -12 9 8 -8
+
+the above example lists which gets canceled :
+6 -6
+8 4 -12
+8 -8
+o/p : 9
+case 3 : 4 6 -10 8 9 10 -19 10 -18 20 25
+O/P : 20 25
+
+Prob157:
+How to calculate sum of all numbers in a string. Example 11aa22bb33dd44 =110
+Note: Should not use Regex and replace
+
+Prob158:
+Find the height difference between two nodes in a binary tree.
+
+Prob159:
+Given a file (which can be considered as a String with comma delimiter for the complexity of the question) of usernames
+and a value k, find top k usernames (with number of logins) who logged into the system the most.
+
+For example -
+Input:
+User (String) = user1, user4, user2, user1, user3, user1, user2, user3
+k (int) = 2
+
+Output:
+user1 (3)
+user2 (2)
+user3 (2)
+
+- Both user2 and user3 should be included since both has same number of logins
+
+Write a java method to find the output with best time and space complexit
+
+Prob160: TODO
+Given a set of numbers, find out all subsets of the set such that
+the sum of all the numbers in the subset is equal to a target number.
+
+s = [ 1, 2, 3, 4, 5 ]
+target = 5
+op = [ [ 1,4 ] , [2,3] , [5] ]
+
+Prob161:
+Print non-repeated elements in sequence
+aaaabbcccca
+OP: abca
+
+Prob162:
+Print the shortest path
+
+Prob163: TODO (implement getPath())
+Check if exists connection between two nodes
+
+Prob164: TODO
+Topological sort order
+
+Prob165:
+Dijkstra
+
+
