@@ -960,13 +960,59 @@ OP: abca
 Prob162:
 Print the shortest path
 
-Prob163: TODO (implement getPath())
+Prob163:
 Check if exists connection between two nodes
 
-Prob164: TODO
+Prob164:
 Topological sort order
 
 Prob165:
-Dijkstra
+Create a DLL from a BST inorder
+
+Prob166:
+Find the solution
+35 () 5 () 20 () 5 = 120
+
+Prob167: TODO
+given pre-order traversal [5,3,2,4,8,7,9] of a BST, how do we identify the leaf nodes without building the tree ?
+
+Prob168:
+Check if a binary tree is a BST
+
+Prob169:
+Diameter of a Binary Tree
+
+Prob170:
+
+Prob171:
+
+Prob172:
+Given an array arr and a number n, you have to find whether there exist a subset in arr whose sum is n.
+You have to print length of the subset.
+1. There exists only one subset like that
+2. All number in arr are positive
+
+Prob173:
+Given a linked list rotate it on the Kth element. For example, given 1->2->3->4->5 the list should be transformed
+into 4->5->1->2->3
+
+Prob174:
+/*
+* Please come up with Class and Data Structure Design for a "metric" system to determine the top song of a
+* band. Two Web Service calls
+*
+* void play(String bandname, String songname);
+* String topSong(String bandname);
+*/
+
+// play("Lady Gaga", "Pokerface");
+// play("Lady Gaga", "Pokerface");
+// play("Lady Gaga", "Alejandro");
+// play("Bruno Mars", "Treasure");
+// topSong("Lady Gaga") -> "Pokerface"
 
 
+Prob175:
+Given a robot which is on Origin in a number line and a string that contains either ‘L’ , ‘R’ or ‘?’. ‘L’ means
+turn left and ‘R’ means turn right. ‘?’ can be assumed to be ‘L’ or ‘R’. Find the maximum distance from origin the
+robot can go at any point of time.

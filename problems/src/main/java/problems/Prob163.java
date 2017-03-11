@@ -40,8 +40,11 @@ public class Prob163 {
 
     public static class PathTo {
         private Set<String> visited = new HashSet<>();
+        private Map<String, String> path = new HashMap<>();
+        private final String s;
 
         public PathTo(DirectGraph g, String s) {
+            this.s = s;
             dfs(g, s);
         }
 
@@ -54,8 +57,25 @@ public class Prob163 {
             visited.add(s);
 
             List<String> adj = g.getAdj(s);
-            for (String v: adj)
+            for (String v: adj) {
                 dfs(g, v);
+                path.put(v, s);
+            }
+        }
+
+        public Stack<String> pathTo(String d) {
+            if (!hasPathTo(d)) return null;
+            Stack<String> stack = new Stack<>();
+            stack.add(d);
+            String x = path.get(d);
+            stack.add(x);
+
+            while (x.compareTo(s) != 0) {
+                x = path.get(x);
+                stack.add(x);
+            }
+
+            return stack;
         }
     }
 
@@ -68,12 +88,19 @@ public class Prob163 {
         g.connect("larissayy", "vvv");
         g.connect("larissa", "breno");
         g.connect("larissa", "gael");
+        g.connect("gael", "mariazinha");
 
-        PathTo path = new PathTo(g, "felipe");
+        PathTo pathTo = new PathTo(g, "felipe");
 
-        System.out.println(path.hasPathTo("gael"));
-        System.out.println(path.hasPathTo("larissa"));
-        System.out.println(path.hasPathTo("vvv"));
-        System.out.println(path.hasPathTo("yyy"));
+//        System.out.println(pathTo.hasPathTo("gael"));
+//        System.out.println(pathTo.hasPathTo("larissa"));
+//        System.out.println(pathTo.hasPathTo("vvv"));
+//        System.out.println(pathTo.hasPathTo("yyy"));
+
+        Stack<String> path = pathTo.pathTo("mariazinha");
+        while (!path.isEmpty()) {
+            String t = path.pop();
+            System.out.println(t);
+        }
     }
 }
